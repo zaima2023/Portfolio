@@ -15,19 +15,20 @@
 
   <header class="site-header" id="top">
     <nav class="nav">
-      <a class="brand" href="#hero" aria-label="Home">KZ<span></span></a>
+      <a class="brand" href="#hero" aria-label="Home">DS KZ<span></span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <ul class="nav-menu" id="navMenu">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Project</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#Experience ">Experience </a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#certs">Certifications</a></li>
-        <li><a href="#involvement">Clubs</a></li>
-        <li><a href="#interests">Interests</a></li>
         <li><a href="#hackathon">Hackathon</a></li>
+        <li><a href="#involvement">Club Involvement</a></li>
+        <li><a href="#interests">Interests & Languages</a></li>
         <li><a href="#contact" class="cta">Contact</a></li>
       </ul>
     </nav>
@@ -49,6 +50,32 @@
           </h1>
           <p class="subtitle typewriter" aria-live="polite">
             Software Developer
+<script>
+  const text = "Software Developer";
+  const speed = 100; // typing speed in ms
+  const pause = 1500; // pause before restarting
+  const element = document.querySelector(".typewriter");
+
+  function typeWriterLoop() {
+    element.textContent = "";
+    let i = 0;
+
+    function typing() {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(typing, speed);
+      } else {
+        // after finishing, restart after pause
+        setTimeout(typeWriterLoop, pause);
+      }
+    }
+    typing();
+  }
+
+  typeWriterLoop();
+</script>
+
           </p>
           <p class="lead">
             I’m passionate about security, data, and building practical systems. I communicate technical concepts clearly and enjoy working in collaborative environments.
@@ -58,7 +85,7 @@
             <a class="btn primary" href="#projects">View Project</a>
             <a class="btn ghost" href="#contact">Get in touch</a>
             <!-- Replace the href below with an online PDF link to your resume -->
-            <a class="btn soft" href="Resume\Zaima Resume.pdf" aria-label="Download Resume">Download Resume</a>
+            <a class="btn soft" href="https://drive.google.com/file/d/1FhVOhckZaAhu_07pufMH-dgL278mSHyK/view?usp=sharing" aria-label="Download Resume"> Resume</a>
           </div>
           <ul class="quick-meta">
             <li>
@@ -66,10 +93,15 @@
               
             </li>
             <li>
-              <a href="mailto:kadeejathzaima@gmail.com" aria-label="Email">kadeejathzaima@gmail.com</a>
+              <a href="mailto:kadeejathzaima@gmail.com" aria-label="Email"></a>
+           <li>· <strong>Email:</strong>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=kadeejathzaima@gmail.com" target="_blank">kadeejathzaima@gmail.com</a>
+  
+</li>
+     
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/kadeejath-zaima?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a>
+              · <a href="https://www.linkedin.com/in/kadeejath-zaima?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a>
               ·
               <a href="https://github.com/zaima2023" target="_blank" rel="noopener">GitHub</a>
             </li>
@@ -88,64 +120,9 @@
       <div class="container">
         <h2 id="about-title" class="section-title">About</h2>
         <p class="section-lead">
-           Detail-oriented and motivated engineer with hands-on experience in design, analysis, and problem solving. Proficient in C & Python and Web technologies with strong foundations in DBMS, OS, Networks. I love turning ideas into reliable, user-friendly solutions, i am eager to grasp knowledge.
+          A Passionate tech enthusiast and final year Computer Science Engineering student with hands-on experience in design, analysis, and problem solving. Proficient in C & Python and Web technologies with strong foundations in Database and Management System, Artificial Intelligence, Operating System, Computer Networks and Machine Learning. I love turning ideas into reliable, user-friendly solutions, i am eager to grasp knowledge.
+          
         </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-        <h2 id="skills-title" class="section-title">Skills</h2>
-        <div class="grid cards">
-          <article class="card reveal">
-            <h3>Programming</h3>
-            <ul class="tags">
-              <li>C</li><li>Python</li><li>Data Structures (C)</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <h3>Data & Tools</h3>
-            <ul class="tags">
-              <li>Python (NumPy, Matplotlib)</li><li>SQL</li><li>Excel</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <h3>Web</h3>
-            <ul class="tags">
-              <li>HTML</li><li>CSS</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <h3>Core CS</h3>
-            <ul class="tags">
-              <li>DBMS</li><li>Operating Systems</li><li>Computer Networks</li><li>OOP in Java</li><li>Artificial Intelligence</li><li>Machine Learning</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <h2 id="projects-title" class="section-title">Project</h2>
-        <article class="project card reveal">
-          <header class="project-head">
-            <h3>Real-Time Human Anomaly Detection for Security Surveillance</h3>
-            <span class="pill">Computer Vision · Security</span>
-          </header>
-          <p>
-            Built a hybrid project using <strong>YOLOv8</strong> for human detection and <strong>LSTM</strong> sequence modeling to classify unusual human behavior. Triggers instant alerts for anomalies to enhance on-prem security.
-          </p>
-          <ul class="project-list">
-            <li>Deployed on video streams to monitor behavior in real-time.</li>
-            
-          </ul>
-          <div class="project-actions">
-            <a class="btn ghost" href="https://github.com/zaima2023" target="_blank" rel="noopener">View Code</a>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -182,6 +159,150 @@
       </div>
     </section>
 
+    <section class="section" id="Experience" aria-labelledby="Experience-title">
+      <div class="container">
+        <h2 id="Experience-title" class="section-title">Experience</h2>
+        <article class="Experience card reveal">
+          <header class="Experience -head">
+            <h3>Software Development & Full Stack Intern</h3>
+             <h2>GD Edutech</h2>
+             <span class="pill">August 2025 - On Going</span>
+            
+          </header>
+          <ul class="Experience -list">
+            <li>Learning and contributing to full stack development, Git and software engineering</li>
+            <li>Hands on experience in real world projects with agile workflows</li>
+            </ul>
+          
+        </article>
+      </div>
+
+       <div class="container">
+        <h2 id="Experience -title" class="section-title"></h2>
+        <article class="Experience card reveal">
+          <header class="Experience-head">
+            <h3>Python Programming Intern</h3>
+            <h2>CodeAlpha</h2>
+              <span class="pill">August 2025</span>
+          </header>
+          </p>
+          <ul class="Experience -list">
+            <li>Problem-solving, data handling, and implementing Python-based applications</li>
+            <li>Practical applications of Python in areas like automation, data processing, and basic software development</li>
+            </ul>
+          
+        </article>
+      </div>
+<!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <article class="project card reveal">
+          <header class="project-head">
+            <h3>Real-Time Human Anomaly Detection for Security Surveillance</h3>
+            <span class="pill">Computer Vision · Security</span>
+          </header>
+          <p>
+            Built a hybrid project using <strong>YOLOv8</strong> for human detection and <strong>LSTM</strong> sequence modeling to classify unusual human behavior. Triggers instant alerts for anomalies to enhance on-prem security.
+          </p>
+          <ul class="project-list">
+            <li>Deployed on video streams to monitor human behavior in real-time.</li>
+            </ul>
+          
+        </article>
+      </div>
+
+       <div class="container">
+        <h2 id="projects-title" class="section-title"></h2>
+        <article class="project card reveal">
+          <header class="project-head">
+            <h3>College Database Management</h3>
+            <span class="pill">DBMS</span>
+          </header>
+          <p>
+            Built a College Database Management System that helps in efficiently storing and managing institutional data.The system supports functions like student registration, course enrollment, attendance tracking, and result management.By using DBMS concepts such as <strong>normalization</strong>, <strong>relationships</strong>, and <strong>queries</strong>, I developed this project to reduce redundancy, ensure data consistency, and enable quick retrieval of information—making college operations more reliable and user-friendly.
+          </p>
+          <ul class="project-list">
+            <li><strong>Frontend</strong>-HTML, CSS and Java Script</li>
+            <li><strong>Backend</strong>-Python and PHP</li>
+            </ul>
+          
+        </article>
+      </div>
+<div class="container">
+        <h2 id="projects-title" class="section-title"></h2>
+        <article class="project card reveal">
+          <header class="project-head">
+            <h3>RC Car</h3>
+            <span class="pill">Embedded System /Microcontroller</span>
+          </header>
+          <p>
+            Built a <strong>Remote-Controlled Car (RC Car) </strong> that can move in different directions using wireless control. The project uses a microcontroller <strong>(Arduino)</strong></strong>, motor driver, DC motors, and a battery pack, along with Bluetooth/Wi-Fi module for communication. It is programmed using Arduino to demonstrate real-time control, robotics, and hardware–software integration.
+          </p>
+          <ul class="project-list">
+            <li>The project demonstrates the integration of electronics, embedded systems, and wireless communication.</li>
+            </ul>
+          
+        </article>
+      </div>
+<div class="container">
+        <h2 id="projects-title" class="section-title"></h2>
+        <article class="project card reveal">
+          <header class="project-head">
+            <h3>Portfolio Website</h3>
+            <span class="pill">Website</span>
+          </header>
+          <p>
+           Built a responsive personal portfolio website using <strong>HTML, CSS, and JavaScript </strong>featuring interactive navigation, animations, and a contact form to showcase  skills and projects. The site is optimized for both desktop and mobile, ensuring a smooth user experience across devices.
+          </p>
+          <ul class="project-list">
+            <li>HTML, CSS and Java Script</li>
+            
+            </ul>
+          
+        </article>
+      </div>
+    </section>
+
+<!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" class="section-title">Skills</h2>
+        <div class="grid cards">
+          <article class="card reveal">
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li>C</li><li>Python</li><li>Data Structures (C)</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Data & Tools</h3>
+            <ul class="tags">
+              <li>Python (NumPy, Matplotlib)</li><li>SQL</li><li>Excel</li><li>Canva</li><li>GitHub</li><li>VS Code</li><li>Microsoft Office Suites</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Web</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>Java Script</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Core CS</h3>
+            <ul class="tags">
+              <li>DBMS</li><li>Operating Systems</li><li>Computer Networks</li><li>OOP in Python</li><li>Artificial Intelligence</li><li>Machine Learning</li>
+            </ul>
+          </article>
+           <article class="card reveal">
+            <h3>Soft Skills</h3>
+            <ul class="tags">
+              <li>Communication</li><li>Teamwork</li><li>Creativity</li><li>Adaptability</li><li>Problem Solving</li><li>Creativity</li>
+            </ul>
+          </article>
+          
+        </div>
+      </div>
+    </section>
     <!-- Certifications -->
     <section class="section" id="certs" aria-labelledby="certs-title">
       <div class="container">
@@ -198,6 +319,8 @@
         </ul>
       </div>
     </section>
+
+    
 
 <section class="section" id="hackathon"
  aria-labelledby="hackathon-title">
@@ -216,7 +339,9 @@
         <h2 id="involve-title" class="section-title">Club Involvement</h2>
         <ul class="tags big">
           <li>Embed Club</li>
-          <li>GLUG PACE CLUB</li>
+          <li>GLUG PACE Club
+          </li>
+          
           <li>IEEE Community</li>
         </ul>
       </div>
