@@ -30,7 +30,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Accessible, client-side contact form validation (no backend here)
-const form = document.getElementById('contactForm');
+/*const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -53,7 +53,7 @@ if (form) {
     status.style.color = '#bde3ff';
     form.reset();
   });
-}
+}*/
 
 // Typewriter effect for hero subtitle (respect reduced motion)
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
