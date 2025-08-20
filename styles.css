@@ -178,10 +178,24 @@ input:focus,textarea:focus{border-color:#7c5cff66;box-shadow:0 0 0 3px #7c5cff22
 
 
 /* Footer */
-.site-footer{padding:32px 0;border-top:1px solid rgba(255,255,255,0.08);color:#98a3b3}
-.site-footer .container{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.site-footer{
+  padding:32px 0;
+  border-top:1px solid rgba(255,255,255,0.08);color:#98a3b3
+}
+
+.site-footer .container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px
+}
 .back-to-top{
-  border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:8px 12px;text-decoration:none;color:#dbe0ea
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:12px;
+  padding:8px 12px;
+  text-decoration:none;
+  color:#dbe0ea;
+  
 }
 
 /* Skip link */
